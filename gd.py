@@ -33,9 +33,6 @@ def main():
         print(f"ANSWER_FOR_LABEL_{label}: {out.softmax(1)[0, label].item()}")
 
 
-# DO NOT CHANGE ANY OTHER FUNCTIONS ABOVE THIS LINE FOR THE FINAL SUBMISSION
-
-
 def normalize_and_jitter(img, step=32):
     # You should use this as data augmentation and normalization,
     # convnets expect values to be mean 0 and std 1
